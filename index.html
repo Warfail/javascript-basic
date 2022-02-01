@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .buah {
+            cursor: pointer;
+        }
+        
+        .buah:hover {
+            text-decoration: underline;
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+
+    <ul>
+        <li class="buah">mangga</li>
+        <li class="buah">apel</li>
+        <li class="buah">anggur</li>
+        <li class="buah">pepaya</li>
+        <li class="buah">melon</li>
+    </ul>
+
+
+</body>
+<script>
+    console.clear();
+    /* 
+    //fungsi perulangan js
+        let buah = document.querySelectorAll('.buah');
+
+        for (let e of buah) {
+            e.addEventListener('click', function() {
+                this.style.color = 'red';
+            })
+        }
+
+
+        let keluarga = [{
+            nama: 'joko',
+            status: 'bekerja',
+            pendapatan: 3000000
+        }, {
+            nama: 'tini',
+            status: 'bekerja',
+            pendapatan: 2000000
+        }, {
+            nama: 'tono',
+            status: 'sekolah',
+            pendapatan: 0
+        }];
+
+        keluarga.forEach(function(kk) {
+            console.log(kk.nama)
+        })
+
+
+        //    fungsi map
+        let kk = keluarga.map(function(kk) {
+            return kk
+        })
+        console.log(kk)
+
+
+        // fungsi filter
+        let kk2 = keluarga.filter(function(kk) {
+            return kk
+        })
+
+        console.log(kk2)
+
+    // fungsi reduce
+        let kk3 = keluarga.reduce(function(prev, curr) {
+            return curr;
+        })
+        console.log(kk3)
+
+        
+        let kk3 = keluarga.reduce(function(prev, curr) {
+            return prev;
+        }, 0)
+
+    */
+
+
+
+
+
+
+
+
+
+
+    //penggunaan for in
+    /*
+        let buah = ['mangga', 'apel', 'anggur', 'pepaya', 'melon'];
+        let person = {
+            nama: 'iky',
+            umur: 20
+        }
+
+        console.log(person["nama"])
+
+
+        for (let b in buah) {
+            console.log(buah[b])
+        }
+    */
+
+
+    // penggunaan for
+    /*
+        let angka = 5;
+
+        for (let i = 0; i <= angka; i++) {
+            console.log(i);
+        }
+    */
+
+    // penggunaan while
+    /*
+        let cetak = true;
+
+        while (cetak) {
+            alert("selamat alert telah keluar");
+            cetak = confirm("apakah anda ingin memunculkan alert ?");
+        
+        }
+    */
+
+
+
+
+
+
+    // penggunaan switch case
+    /*
+    let menu = prompt(`silahkan pilih menu :
+    1. nasi goreng
+    2. ayam goreng
+    3. mie goreng
+    `);
+
+    switch (menu) {
+        case "1":
+            alert("nasi goreng dipilih")
+            break;
+        case "2":
+            alert("ayam goreng dipilih")
+            break;
+        case "3":
+            alert("mie goreng dipilih")
+            break;
+        default:
+            alert("menu tidak tersedia")
+            break;
+    }
+*/
+    /*
+
+    // penggunaan if else
+    
+
+        let nilai = 2;
+        let gender = ' ';
+
+        if (nilai = 1) {
+            if (gender == 'pria') {
+                console.log("selamat anda lulus dan masuk kategori pria")
+            } else {
+                console.log("selamat anda lulus dan masuk kategori wanita")
+            }
+            console.log("selamat anda lulus")
+        } else if (nilai > 1 && nilai < 3) {
+            console.log('anda dipertimbangkan')
+        } else {
+            console.log("maaf, anda tidak lulus");
+        }
+        */
+
+
+    let nilai = prompt(`masukan nilai :`);
+
+    //let nilai = menu;
+
+
+    if (nilai > 80 && nilai <= 100) {
+        alert("nilai anda A")
+    } else if (nilai > 59 && nilai <= 80) {
+        alert('nilai anda B')
+    } else if (nilai > 39 && nilai < 60) {
+        alert('nilai anda c')
+    } else {
+        alert("nilai anda D");
+    }
+</script>
+
+</html>
