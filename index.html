@@ -186,20 +186,128 @@
         }
         */
 
+    /*
+        let nilai = prompt(`masukan nilai :`);
 
-    let nilai = prompt(`masukan nilai :`);
-
-    //let nilai = menu;
+        //let nilai = menu;
 
 
-    if (nilai > 80 && nilai <= 100) {
-        alert("nilai anda A")
-    } else if (nilai > 59 && nilai <= 80) {
-        alert('nilai anda B')
-    } else if (nilai > 39 && nilai < 60) {
-        alert('nilai anda c')
-    } else {
-        alert("nilai anda D");
+        if (nilai > 80 && nilai <= 100) {
+            alert("nilai anda A")
+        } else if (nilai > 59 && nilai <= 80) {
+            alert('nilai anda B')
+        } else if (nilai > 39 && nilai < 60) {
+            alert('nilai anda c')
+        } else {
+            alert("nilai anda D");
+        }
+    */
+
+
+    let ulang = true;
+    // let nilai
+    while (ulang) {
+
+        //  var x = nilai1
+
+
+        alert("silahkan baca aturan untuk melanjutkan permainan")
+        alert("ini adalah permainan sederhana dimana akan dimainkan oleh 2 orang, dimana 2 orang tersebut akan menebak angka yang keluar mulai dari 1-5. dengan ketentuan selama 5 ronde");
+        alert("permainan hanya akan bisa lanjut jika pemain menjawab dengan benar");
+        alert("silahkan bermain");
+        var y = 1
+        var y1 = 2
+        var y2 = 3
+        var y3 = 2
+        var y4 = 1
+
+        let nilai1 = prompt(`player1 silahkan masukan nilai 1-3 :`);
+        let nilai2 = prompt(`player2 silahkan masukan nilai 1-3 :`);
+        if (nilai1 == y) {
+            alert("player 1 menang")
+                // ulang = confirm("apakah anda ingin lanjut?");
+
+        } else if (nilai2 == y) {
+            alert("player 2 menang")
+                // ulang = confirm("apakah anda ingin lanjut?");
+        } else if (nilai1 && nilai2 > y) {
+            y++;
+            alert("angka anda terlalu besar");
+        } else {
+            y++;
+            alert("angka anda terlalu kecil")
+        }
+
+
+
+        alert("ronde 2");
+        let nilai3 = prompt(`player1 silahkan masukan nilai 1-3 :`);
+        let nilai4 = prompt(`player2 silahkan masukan nilai 1-3 :`);
+        if (nilai3 == y1) {
+            alert("player 1 menang")
+                //ulang = confirm("apakah anda ingin lanjut?");
+        } else if (nilai4 == y1) {
+            alert("player 2 menang")
+                //ulang = confirm("apakah anda ingin lanjut?");
+        } else if (nilai3 && nilai4 > y1) {
+            y1++;
+            alert("angka anda terlalu besar");
+        } else {
+            y1++;
+            alert("angka anda terlalu kecil")
+        }
+
+        alert("ronde 3");
+        let nilai5 = prompt(`player1 silahkan masukan nilai 1-3 :`);
+        let nilai6 = prompt(`player2 silahkan masukan nilai 1-3 :`);
+        if (nilai5 == y2) {
+            alert("player 1 menang")
+                //ulang = confirm("apakah anda ingin lanjut?");
+        } else if (nilai6 == y2) {
+            alert("player 2 menang")
+                //ulang = confirm("apakah anda ingin lanjut?");
+        } else if (nilai5 && nilai6 > y2) {
+            y2++;
+            alert("angka anda terlalu besar");
+        } else {
+            y2++;
+            alert("angka anda terlalu kecil")
+        }
+
+        alert("ronde 4");
+        let nilai7 = prompt(`player1 silahkan masukan nilai 1-3 :`);
+        let nilai8 = prompt(`player2 silahkan masukan nilai 1-3 :`);
+        if (nilai7 == y3) {
+            alert("player 1 menang")
+                //ulang = confirm("apakah anda ingin lanjut?");
+        } else if (nilai8 == y3) {
+            alert("player 2 menang")
+                //ulang = confirm("apakah anda ingin lanjut?");
+        } else if (nilai7 && nilai8 > y3) {
+            y3++;
+            alert("angka anda terlalu besar");
+        } else {
+            y3++;
+            alert("angka anda terlalu kecil")
+        }
+
+        alert("ronde 5");
+        let nilai9 = prompt(`player1 silahkan masukan nilai 1-3 :`);
+        let nilai0 = prompt(`player2 silahkan masukan nilai 1-3 :`);
+        if (nilai9 == y4) {
+            alert("player 1 menang")
+                //ulang = confirm("apakah anda ingin lanjut?");
+        } else if (nilai0 == y4) {
+            alert("player 2 menang")
+                //ulang = confirm("apakah anda ingin lanjut?");
+        } else if (nilai9 && nilai0 > y4) {
+            y4++;
+            alert("angka anda terlalu besar");
+        } else {
+            y4++;
+            alert("angka anda terlalu kecil")
+        }
+
     }
 </script>
 
